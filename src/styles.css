@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: black;
+  --white: white;
+  --green: rgb(45, 175, 52);
+  --orange: rgb(250, 103, 45);
+}
+
+.App {
+  font-family: sans-serif;
+  background-color: var(--black);
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  color: var(--white);
+}
+
+.btn-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.btn {
+  flex-grow: 1;
+  height: 40px;
+  border: 0px solid var(--black);
+}
+
+.btn:hover {
+  border: 1px solid var(--white);
+}
+
+.btn.buy {
+  background-color: var(--green);
+}
+
+.btn.sell {
+  background-color: var(--orange);
+}
+
+.order-line-item.size {
+  padding: 20px;
+}
+
+.order-line-item.buy {
+  color: var(--green);
+}
+
+.order-line-item.sell {
+  color: var(--orange);
+}
+
+hr {
+  margin: 10px 0;
+}
